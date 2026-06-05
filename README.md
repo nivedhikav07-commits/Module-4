@@ -147,11 +147,12 @@ To write a Python program that counts the number of lines in a text file `story.
 ## 🧾 Program
 ```
 def count_lines(filename):
-count = 0
-with open(filename, "r") as file: 
-    for line in file:
-        if not line.startswith('T'):
-            count += 1
+   count = 0
+   with open(filename, "r") as file: 
+       for line in file:
+           if not line.startswith('T'):
+               count += 1
+   return count
 result=count_lines("story.txt")
 print("Number of lines not starting with 'T':", result)
 ```
